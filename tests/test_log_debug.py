@@ -3,7 +3,8 @@ from unittest.mock import patch
 import sys
 import io
 import os
-from lite_logging.lite_logging import log_debug, LOGGING_ENABLED, DEBUG_MODE
+from lite_logging.lite_logging import log_debug
+from lite_logging.config import LOGGING_ENABLED, DEBUG_MODE
 
 class TestLogDebug(unittest.TestCase):
     @patch('sys.stdout', new_callable=io.StringIO)

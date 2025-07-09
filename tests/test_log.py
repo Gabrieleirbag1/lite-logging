@@ -2,7 +2,8 @@ import unittest
 from unittest.mock import patch
 import sys
 import io
-from lite_logging.lite_logging import log, LOGGING_ENABLED, DEBUG_MODE, LOG_LEVEL
+from lite_logging.lite_logging import log
+from lite_logging.config import LOGGING_ENABLED, DEBUG_MODE, LOG_LEVEL
 
 class TestLog(unittest.TestCase):
     @patch('sys.stdout', new_callable=io.StringIO)
